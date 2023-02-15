@@ -71,8 +71,10 @@ export const Botcenter = styled.div`
     padding: 0;
   }
 
-  & li {
-    /* margin: 34px 56px; */
-    
+  & li:hover {
+    color: #a791cb;
+    cursor: pointer;
   }
+
+  
 `;

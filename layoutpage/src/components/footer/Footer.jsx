@@ -7,7 +7,6 @@ import {
   Contents,
   Bot,
   BotLeft,
-  BotRight,
   Top,
   TopCenter,
   TopLeft,
@@ -16,7 +15,7 @@ import {
   Icon,
   List,
   ListItem,
-  Title,
+  Title,BotContainer
 } from "./footerStyle";
 const Footer = () => {
   return (
@@ -67,11 +66,13 @@ const Footer = () => {
             </Desc>
           </TopRight>
         </Top>
-        <Bot>
-          <BotLeft>© Copyright 2015 & Made with  by ArrowHitech.</BotLeft>
-          <BotRight><img src={payment} alt="" /></BotRight>
-        </Bot>
       </Contents>
+        <Bot>
+          <BotContainer>
+          <BotLeft>© Copyright 2015 & Made with <i style={{color:'red'}} class="fa-solid fa-heart"></i> by ArrowHitech.</BotLeft>
+          <p><img src={payment} alt="" /></p>
+          </BotContainer>
+        </Bot>
     </Container>
   );
 };

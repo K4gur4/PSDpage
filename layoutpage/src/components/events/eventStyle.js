@@ -64,7 +64,7 @@ export const ItemTitle = styled.div`
 font-size: 16px;
 font-weight: bold;
 cursor: pointer;
-& :hover{
+&:hover{
   color: #9b83c3;
 }
 `;

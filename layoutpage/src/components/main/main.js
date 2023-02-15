@@ -86,5 +86,9 @@ background-color: white;
 margin-bottom: 4px;
 margin-left: 4px;
 padding: 14px 18px;
+cursor: pointer;
+&:hover {
+       color: #a791cb;;
+    }
 `;
 
