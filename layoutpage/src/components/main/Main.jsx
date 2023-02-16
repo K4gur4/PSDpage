@@ -92,7 +92,7 @@ const Main = () => {
       </Title>
       <Products>
         {products.map((item) => (
-          <Item>
+          <Item key={item.id}>
             <ImgContainer>
               <Img src={item.img} />
               <ImgButton>ADD TO CART</ImgButton>

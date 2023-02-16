@@ -58,10 +58,10 @@ const Footer = () => {
             <Title>Shop Location</Title>
             <Desc>
               <ListItem>
-                <li><i class="fa-regular fa-map"></i>500 Hennessy Road</li>
-                <li>Causeway Bay, Hong Kong</li>
-                <li><i class="fa-solid fa-phone"></i>+1 23456789</li>
-                <li><i class="fa-regular fa-envelope"></i>contact@yourdomain.com</li>
+                <li><i class="fa-regular fa-map"></i> 500 Hennessy Road</li>
+                <li> Causeway Bay, Hong Kong</li>
+                <li><i class="fa-solid fa-phone"></i> +1 23456789</li>
+                <li><i class="fa-regular fa-envelope"></i> contact@yourdomain.com</li>
               </ListItem>
             </Desc>
           </TopRight>
@@ -69,7 +69,7 @@ const Footer = () => {
       </Contents>
         <Bot>
           <BotContainer>
-          <BotLeft>© Copyright 2015 & Made with <i style={{color:'red'}} class="fa-solid fa-heart"></i> by ArrowHitech.</BotLeft>
+          <BotLeft>© Copyright 2015 & Made with <i style={{color:'red'}} class="fa-solid fa-heart"></i> by <a style={{color:'white'}}>ArrowHitech.</a> </BotLeft>
           <p><img src={payment} alt="" /></p>
           </BotContainer>
         </Bot>

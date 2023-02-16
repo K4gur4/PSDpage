@@ -1,20 +1,29 @@
 import styled from "styled-components";
 import prod1 from '../../img/product1.png'
+import { mobile } from "../../responsive";
 export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  ${mobile({
+    width: "100%",
+  })}
 `;
 export const Title = styled.div`
   height: 100px;
   width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-
+  ${mobile({
+    textAlign:'center'
+  })}
   & hr {
     color: #8262b5;
     width: 50px;
     margin: 0;
+    ${mobile({
+    margin: 'auto'
+  })}
   }
 `;
 export const Products = styled.div`
@@ -22,11 +31,20 @@ export const Products = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  ${mobile({
+    justifyContent: 'space-around',
+    padding:'20px'
+  })}
 `;
 export const Item = styled.div`
   width: 262px;
   height: 408px;
   margin: 25px 0px;
+  ${mobile({
+    width: '47%',
+    height:'100%'
+    
+  })}
 `;
 export const Name = styled.p`
   letter-spacing: 6px;
@@ -43,6 +61,10 @@ export const TitleName = styled.h2`
 export const Img = styled.img`
   height: 323;
   width: 262px;
+  ${mobile({
+    width:'100%',
+  })}
+
 `;
 export const Data = styled.div`
 font-family: 'Open Sans';

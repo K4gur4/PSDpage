@@ -1,14 +1,20 @@
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 export const Container = styled.div`
   margin-top: 30px;
   margin-bottom: 78px;
   width: 100%;
   display: flex;
+  ${mobile({
+    width: "100%",
+    flexDirection:"column",
+    alignItems:'center',
+    marginTop:'125px'
+  })}
 `;
 
 export const Leftcontainer = styled.div`
   position: relative;
-  /* overflow: hidden; */
   width: 750px;
   height: 560px;
   background-color: #eeeeee;
@@ -39,7 +45,11 @@ export const Leftcontainer = styled.div`
     z-index: 1;
     left: -30px;
     top: 24px;
+    
   }
+  ${mobile({
+    width:'100%',
+  })}
 `;
 export const Title = styled.div`
     position: absolute ;
@@ -60,8 +70,17 @@ export const Title = styled.div`
 export const Left = styled.div`
   margin-right: 30px;
   overflow: hidden;
+  ${mobile({
+     marginRight: '0px',
+     width:'100%'
+  })}
+  
 `;
-export const Right = styled.div``;
+export const Right = styled.div`
+ ${mobile({
+    display:'none'
+  })}
+`;
 export const Top = styled.div`
 display: flex;
 position: relative;
@@ -85,6 +104,7 @@ position: relative;
   & img {
     position: absolute;
   }
+  
 `;
 
 export const TopTitle= styled.div`

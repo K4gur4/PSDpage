@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import img from "../../img/eventback.png";
+import { mobile } from "../../responsive";
 
 export const Title = styled.div`
   text-align: center;
@@ -31,6 +32,12 @@ margin-top: 50px;
   width: 1140px;
   display: flex;
   justify-content: space-between;
+  ${mobile({
+    flexWrap:"wrap",
+    alignItems: "center",
+    width: '100%',
+    padding:'20px'
+  })}
 `;
 export const Container = styled.div`
   width: 1920px;
@@ -40,12 +47,21 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  ${mobile({
+    width: "100%",
+    flexDirection:"column",
+    height: 'auto',
+  })}
 `;
 
 export const Item = styled.div`
   height: 390px;
   width: 360px;
   background-color: white;
+  ${mobile({
+    width: '49%',
+    margin: '10px 0px'
+  })}
 `;
 export const ItemImg = styled.div`
 display: flex;
@@ -53,6 +69,9 @@ display: flex;
   position: absolute;
   margin-left: 20px;
   margin-top: 20px;
+}
+.events{
+  width: 100%;
 }
 `;
 export const ItemData = styled.div`

@@ -27,7 +27,7 @@ const Event = () => {
       heart: 6,
     },
     {
-      id: 0,
+      id: 1,
       img: event2,
       title: "Vivamus non dignissim elit",
       desc: "Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.",
@@ -35,7 +35,7 @@ const Event = () => {
       heart: 6,
     },
     {
-      id: 0,
+      id: 2,
       img: event3,
       title: "Ut lacinia erat ut diam volutpat",
       desc: "Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.",
@@ -52,7 +52,7 @@ const Event = () => {
       </Title>
       <Events>
         {events.map((item) => (
-          <Item>
+          <Item key={item.id}>
             <ItemImg>
               <img className="events" src={item.img} alt="" />
               <img className="date" src={date} alt="" />
