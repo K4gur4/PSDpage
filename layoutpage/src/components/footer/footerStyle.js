@@ -11,7 +11,7 @@ export const Container = styled.div`
   background-color: #222222;
   ${mobile({
     width: "100%",
-  height: 'auto'
+    height: "auto",
   })}
 `;
 export const Contents = styled.div`
@@ -31,9 +31,9 @@ export const Top = styled.div`
   margin-top: 54px;
   ${mobile({
     width: "100%",
-    heigh:'auto',
-    flexWrap:'wrap',
-  justifyContent: 'space-around'
+    heigh: "auto",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
   })}
 `;
 export const TopLeft = styled.div`
@@ -52,7 +52,7 @@ export const TopRight = styled.div`
   justify-content: flex-start;
   ${mobile({
     width: "95%",
-    marginBottom: '20px'
+    marginBottom: "20px",
   })}
 `;
 export const TopCenter = styled.div`
@@ -89,6 +89,7 @@ export const Desc = styled.div`
 `;
 export const Icon = styled.div`
   margin-top: 50px;
+  cursor: pointer;
 `;
 export const List = styled.div`
   display: flex;
@@ -96,15 +97,19 @@ export const List = styled.div`
 `;
 export const ListItem = styled.ul`
   list-style: none;
-
   & li {
+    font-family: "Open Sans";
+    font-size: 14px;
     cursor: pointer;
-    margin-bottom: 10px;
-    /* font-size: 14px; */
+    line-height: 2.1;
+  }
+  &.right {
+    padding-right: 35px;
   }
 
-  & li:hover {
-    border-bottom: 1px solid #888888;
+  & p:hover {
+    border-bottom: 1px solid white;
+    color: white;
   }
 `;
 
@@ -116,4 +121,8 @@ export const BotContainer = styled.div`
   color: #888888;
   margin: 25px;
   font-size: 15px;
+
+  & p {
+    cursor: pointer;
+  }
 `;

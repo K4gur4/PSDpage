@@ -37,20 +37,20 @@ const Footer = () => {
             <Title>Navigation</Title>
             <List>
               <ListItem>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Our Blog</li>
-                <li>Women</li>
-                <li>Men</li>
-                <li>Contact Us</li>
+                <li><p>Home</p></li>
+                <li><p>About Us</p></li>
+                <li><p>Our Blog</p></li>
+                <li><p>Women</p></li>
+                <li><p>Men</p></li>
+                <li><p>Contact Us</p></li>
               </ListItem>
-              <ListItem>
-                <li>FAQs</li>
-                <li>Featured Brands</li>
-                <li>Gift Vouchers</li>
-                <li>Affiliates</li>
-                <li>Speccial Gift</li>
-                <li>Terms & Conditions</li>
+              <ListItem className="right">
+                <li><p>FAQs</p></li>
+                <li><p>Featured Brands</p></li>
+                <li><p>Gift Vouchers</p></li>
+                <li><p>Affiliates</p></li>
+                <li><p>Speccial Gift</p></li>
+                <li><p>Terms & Conditions</p></li>
               </ListItem>
             </List>
           </TopCenter>

@@ -9,8 +9,6 @@ export const Container = styled.div`
   width: 100%;
   ${mobile({
     position: "fixed",
-  width: '100%'
-
   })}
   z-index: 5;
   background-color: white;
@@ -31,6 +29,7 @@ export const Topright = styled.div`
   display: flex;
   & p {
     margin-right: 30px;
+    cursor: pointer;
   }
 `;
 export const Topleft = styled.div`
@@ -61,16 +60,21 @@ export const Logo = styled.div`
   font-size: 20px;
   padding: 6px 0px 6px 15px;
   border: 2px solid black;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const Botright = styled.div`
-margin-left: 110px;
+  margin-left: 110px;
   & i {
     font-size: 30px;
     margin-right: 30px;
+    cursor: pointer;
   }
   ${mobile({
-    marginRight: '0px',
+    marginRight: "0px",
     marginLeft: "0px",
   })}
 `;

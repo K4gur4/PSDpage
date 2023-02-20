@@ -99,11 +99,11 @@ margin-top: 15px;
 export const Footer = styled.div`
 display:flex;
  & i {
+  color: #c0c0c0;
   font-size: 14px;
   margin-left: 19px;
   padding-right: 15px;
   margin-top: 20px;
-
   margin: 20px 2px 15px 19px;
  }
 `

@@ -42,12 +42,13 @@ const Event = () => {
       comment: 12,
       heart: 6,
     },
+    
   ];
   return (
     <Container>
       <Title>
         <p>LASTEST</p>
-        <h2>NEW & EVENTS</h2>
+        <h2>NEWS & EVENTS</h2>
         <hr />
       </Title>
       <Events>

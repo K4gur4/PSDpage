@@ -50,9 +50,9 @@ const Nav = () => {
           </ul>
         </Botcenter>
         <Botright>
-          <i class="fa-sharp fa-regular fa-heart"></i>
+          <i class="pe-7s-like"></i>
 
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="pe-7s-cart"></i>
         </Botright>
       </Bot>
       <BotMoblie>
@@ -68,8 +68,9 @@ const Nav = () => {
           <Logo>FRANCO</Logo>
         </Botleft>
         <Botright>
-          <i class="fa-sharp fa-regular fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
+        <i class="pe-7s-like"></i>
+
+          <i class="pe-7s-cart"></i>
         </Botright>
         </MobileTop>
        {extend ?    <MobileBot>

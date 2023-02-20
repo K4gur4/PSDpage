@@ -44,7 +44,6 @@ const Main = () => {
       id: 2,
       img: prod3,
       name: "Proin sed nulla mi",
-      price: 99.00,
       discount: 84.00,
     },
     {
@@ -72,7 +71,6 @@ const Main = () => {
       id: 6,
       img: prod7,
       name: "Proin sed nulla mi",
-      price: 99.00,
       discount: 84.00,
     },
     {
@@ -101,8 +99,12 @@ const Main = () => {
               <DataTitle>{item.name}</DataTitle>
               <Icon><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></Icon>
               <PriceContainer>
-                <Price>${(item.price).toFixed(2)}</Price>
-                <Discount>${(item.discount).toFixed(2)}</Discount>
+                <Price>{
+                item.price?
+                "$"+(item.price).toFixed(2)
+                :<></>
+                }</Price>
+                <Discount>{"$"+(item.discount).toFixed(2)}</Discount>
               </PriceContainer>
             </Data>
           </Item>
